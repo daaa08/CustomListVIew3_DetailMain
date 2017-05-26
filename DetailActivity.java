@@ -36,15 +36,15 @@ public class DetailActivity extends AppCompatActivity {
         }
 
 
-//        // 뒤로가가하면 리스트로 돌아가기
-//        findViewById(R.id.btnback).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent  = new Intent(DetailActivity.this, ListActivity.class);
-////                startActivity(intent);  // 스택에 쌓여서 성능 저하가 있음
-//                finish();  // 나를 여기서 끝냄
-//            }
-//        });
+       // 뒤로가가하면 리스트로 돌아가기
+       findViewById(R.id.btnback).setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent  = new Intent(DetailActivity.this, ListActivity.class);
+//                startActivity(intent);  // 스택에 쌓여서 성능 저하가 있음
+               finish();  // 나를 여기서 끝냄
+           }
+       });
     }
 }
 
